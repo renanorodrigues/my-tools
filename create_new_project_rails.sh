@@ -14,10 +14,10 @@ HEAD_STYLE="==============================================================="
 while :
 do
   read -p "Digite se o projeto é uma API ou não [y/n]: " request
-	if [[ $request == 'y' || $request == 'n' ]]
-	then
-		break
-	fi
+  if [[ $request == 'y' || $request == 'n' ]]
+  then
+    break
+  fi
 done
 
 MODE_API=$(echo $request | tr '[:upper:]' '[:lower:]')
